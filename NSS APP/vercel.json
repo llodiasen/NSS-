@@ -1,19 +1,11 @@
 {
   "version": 2,
-  "builds": [
+  "buildCommand": "",
+  "outputDirectory": "NSS APP",
+  "rewrites": [
     {
-      "src": "NSS APP/**",
-      "use": "@vercel/static"
-    }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/NSS APP/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/NSS APP/index.html"
+      "source": "/(.*)",
+      "destination": "/NSS APP/$1"
     }
   ],
   "cleanUrls": true,
