@@ -1,0 +1,22 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "NSS APP/**",
+      "use": "@vercel/static"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/NSS APP/$1"
+    },
+    {
+      "src": "/",
+      "dest": "/NSS APP/index.html"
+    }
+  ],
+  "cleanUrls": true,
+  "trailingSlash": false
+}
+
